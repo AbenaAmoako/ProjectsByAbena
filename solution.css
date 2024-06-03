@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+:root {
+    --card: hsl(0, 0%, 100%);
+    --text: hsl(220, 15%, 55%);
+    --main-text: hsl(218, 44%, 22%);
+    --mobile: 23.5rem;
+    --desktop:90rem;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,* ::before ::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: rgb(203, 225, 238);
+}
+
+.card {
+    max-width: 23rem;
+    box-shadow: 0 0.3rem 0.5rem 0 rgba(0,0,0,0.2);
+    border-radius: 1.25rem;
+    margin-left: 40%;
+    margin-top: 15rem;
+    background-color: white;
+}
+
+@media (max-width: 23.5rem) {
+    /* 375px */
+    .card {
+        width: calc(62.5%-58rem);
+    }
+}
+
+.image {
+    padding: 1.5rem;
+    border-radius: 1.25rem;  
+}
+
+.wrapper {
+    text-align: center;
+    line-height: 2rem;
+    max-width: var(--mobile);
+}
+
+@media (max-width: 23.5rem) {
+    /* 375px */
+    .wrapper{
+        width: calc(62.5%-58rem);
+    }
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
